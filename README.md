@@ -14,19 +14,22 @@ import SRStatusItemPopupController
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    ...
-    var popup: SRStatusItemPopupController?
+  ...
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
-        let viewController = ViewController(nibName: "ViewController",
-                                            bundle: nil)
-        let image = NSImage(named: NSImageNameFolder) // System Folder Icon
-        self.popup = SRStatusItemPopupController(viewController: viewController!,
-                                                 image: image,
-                                                 alternateImage: nil)
-    }
+  var popup: SRStatusItemPopupController?
 
-    ...
+  func applicationDidFinishLaunching(_ aNotification: NSNotification) {
+    let viewController = ViewController(nibName: "ViewController",
+                                        bundle: nil)
+    let image = NSImage(named: NSImageNameFolder) // System Folder Icon
+    self.popup = SRStatusItemPopupController(viewController: viewController!,
+                                             image: image,
+                                             alternateImage: nil
+                                             autoHide: true)
+  }
+
+  ...
+
 }
 ```
 
