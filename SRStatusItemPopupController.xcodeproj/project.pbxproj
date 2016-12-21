@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A16AF431E0A807900C568E4 /* SRStatusItemPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A16AF421E0A807900C568E4 /* SRStatusItemPopupController.swift */; };
 		8A47D73D1B732B23004CA762 /* SRStatusItemPopupController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A47D73C1B732B23004CA762 /* SRStatusItemPopupController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A47D7461B732B61004CA762 /* SRStatusItemPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D7451B732B61004CA762 /* SRStatusItemPopupController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A16AF421E0A807900C568E4 /* SRStatusItemPopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRStatusItemPopupController.swift; sourceTree = "<group>"; };
 		8A47D7391B732B23004CA762 /* SRStatusItemPopupController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SRStatusItemPopupController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A47D73C1B732B23004CA762 /* SRStatusItemPopupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRStatusItemPopupController.h; sourceTree = "<group>"; };
 		8A47D73E1B732B23004CA762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A47D7451B732B61004CA762 /* SRStatusItemPopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRStatusItemPopupController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +29,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A16AF411E0A807900C568E4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8A16AF421E0A807900C568E4 /* SRStatusItemPopupController.swift */,
+			);
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
 		8A47D72F1B732B23004CA762 = {
 			isa = PBXGroup;
 			children = (
@@ -48,19 +56,11 @@
 		8A47D73B1B732B23004CA762 /* SRStatusItemPopupController */ = {
 			isa = PBXGroup;
 			children = (
-				8A47D7441B732B61004CA762 /* Sources */,
+				8A16AF411E0A807900C568E4 /* Source */,
 				8A47D73C1B732B23004CA762 /* SRStatusItemPopupController.h */,
 				8A47D73E1B732B23004CA762 /* Info.plist */,
 			);
 			path = SRStatusItemPopupController;
-			sourceTree = "<group>";
-		};
-		8A47D7441B732B61004CA762 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				8A47D7451B732B61004CA762 /* SRStatusItemPopupController.swift */,
-			);
-			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,11 +101,12 @@
 		8A47D7301B732B23004CA762 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Seorenn;
 				TargetAttributes = {
 					8A47D7381B732B23004CA762 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -141,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A47D7461B732B61004CA762 /* SRStatusItemPopupController.swift in Sources */,
+				8A16AF431E0A807900C568E4 /* SRStatusItemPopupController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +162,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -207,8 +210,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -227,6 +232,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -247,6 +253,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.SRStatusItemPopupController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -265,6 +272,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.SRStatusItemPopupController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -287,6 +295,7 @@
 				8A47D7431B732B23004CA762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

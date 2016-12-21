@@ -10,7 +10,6 @@
 		8A47D7541B732C19004CA762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D7531B732C19004CA762 /* AppDelegate.swift */; };
 		8A47D7561B732C19004CA762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A47D7551B732C19004CA762 /* Assets.xcassets */; };
 		8A47D7591B732C19004CA762 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A47D7571B732C19004CA762 /* MainMenu.xib */; };
-		8A47D7641B732C19004CA762 /* MenubarPopupDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D7631B732C19004CA762 /* MenubarPopupDemoAppTests.swift */; };
 		8A47D7741B732C4B004CA762 /* SRStatusItemPopupController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A47D7731B732C3B004CA762 /* SRStatusItemPopupController.framework */; };
 		8A47D7751B732C4B004CA762 /* SRStatusItemPopupController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A47D7731B732C3B004CA762 /* SRStatusItemPopupController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A47D7811B732E4D004CA762 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D77F1B732E4D004CA762 /* ViewController.swift */; };
@@ -18,13 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8A47D7601B732C19004CA762 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A47D7481B732C19004CA762 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A47D74F1B732C19004CA762;
-			remoteInfo = MenubarPopupDemoApp;
-		};
 		8A47D7721B732C3B004CA762 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8A47D76E1B732C3B004CA762 /* SRStatusItemPopupController.xcodeproj */;
@@ -61,9 +53,6 @@
 		8A47D7551B732C19004CA762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A47D7581B732C19004CA762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8A47D75A1B732C19004CA762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A47D75F1B732C19004CA762 /* MenubarPopupDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenubarPopupDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A47D7631B732C19004CA762 /* MenubarPopupDemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenubarPopupDemoAppTests.swift; sourceTree = "<group>"; };
-		8A47D7651B732C19004CA762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A47D76E1B732C3B004CA762 /* SRStatusItemPopupController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SRStatusItemPopupController.xcodeproj; path = ../../../SRStatusItemPopupController.xcodeproj; sourceTree = "<group>"; };
 		8A47D77F1B732E4D004CA762 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A47D7801B732E4D004CA762 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -78,13 +67,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A47D75C1B732C19004CA762 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				8A47D7521B732C19004CA762 /* MenubarPopupDemoApp */,
-				8A47D7621B732C19004CA762 /* MenubarPopupDemoAppTests */,
 				8A47D7511B732C19004CA762 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				8A47D7501B732C19004CA762 /* MenubarPopupDemoApp.app */,
-				8A47D75F1B732C19004CA762 /* MenubarPopupDemoAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,15 +98,6 @@
 				8A47D7801B732E4D004CA762 /* ViewController.xib */,
 			);
 			path = MenubarPopupDemoApp;
-			sourceTree = "<group>";
-		};
-		8A47D7621B732C19004CA762 /* MenubarPopupDemoAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				8A47D7631B732C19004CA762 /* MenubarPopupDemoAppTests.swift */,
-				8A47D7651B732C19004CA762 /* Info.plist */,
-			);
-			path = MenubarPopupDemoAppTests;
 			sourceTree = "<group>";
 		};
 		8A47D76F1B732C3B004CA762 /* Products */ = {
@@ -159,39 +130,18 @@
 			productReference = 8A47D7501B732C19004CA762 /* MenubarPopupDemoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8A47D75E1B732C19004CA762 /* MenubarPopupDemoAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8A47D76B1B732C19004CA762 /* Build configuration list for PBXNativeTarget "MenubarPopupDemoAppTests" */;
-			buildPhases = (
-				8A47D75B1B732C19004CA762 /* Sources */,
-				8A47D75C1B732C19004CA762 /* Frameworks */,
-				8A47D75D1B732C19004CA762 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8A47D7611B732C19004CA762 /* PBXTargetDependency */,
-			);
-			name = MenubarPopupDemoAppTests;
-			productName = MenubarPopupDemoAppTests;
-			productReference = 8A47D75F1B732C19004CA762 /* MenubarPopupDemoAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8A47D7481B732C19004CA762 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Seorenn;
 				TargetAttributes = {
 					8A47D74F1B732C19004CA762 = {
 						CreatedOnToolsVersion = 7.0;
-					};
-					8A47D75E1B732C19004CA762 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 8A47D74F1B732C19004CA762;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -215,7 +165,6 @@
 			projectRoot = "";
 			targets = (
 				8A47D74F1B732C19004CA762 /* MenubarPopupDemoApp */,
-				8A47D75E1B732C19004CA762 /* MenubarPopupDemoAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,13 +190,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A47D75D1B732C19004CA762 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,22 +202,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A47D75B1B732C19004CA762 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8A47D7641B732C19004CA762 /* MenubarPopupDemoAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8A47D7611B732C19004CA762 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8A47D74F1B732C19004CA762 /* MenubarPopupDemoApp */;
-			targetProxy = 8A47D7601B732C19004CA762 /* PBXContainerItemProxy */;
-		};
 		8A47D7771B732C4B004CA762 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SRStatusItemPopupController;
@@ -308,8 +237,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -352,8 +283,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -372,58 +305,35 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 		8A47D7691B732C19004CA762 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MenubarPopupDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.MenubarPopupDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8A47D76A1B732C19004CA762 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MenubarPopupDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.MenubarPopupDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		8A47D76C1B732C19004CA762 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MenubarPopupDemoAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.MenubarPopupDemoAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenubarPopupDemoApp.app/Contents/MacOS/MenubarPopupDemoApp";
-			};
-			name = Debug;
-		};
-		8A47D76D1B732C19004CA762 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MenubarPopupDemoAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.MenubarPopupDemoAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenubarPopupDemoApp.app/Contents/MacOS/MenubarPopupDemoApp";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -446,14 +356,7 @@
 				8A47D76A1B732C19004CA762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		8A47D76B1B732C19004CA762 /* Build configuration list for PBXNativeTarget "MenubarPopupDemoAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A47D76C1B732C19004CA762 /* Debug */,
-				8A47D76D1B732C19004CA762 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,17 +10,17 @@ import Cocoa
 import SRStatusItemPopupController
 
 class ViewController: NSViewController {
-
-    weak var popup: SRStatusItemPopupController?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
+  
+  weak var popup: SRStatusItemPopupController?
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do view setup here.
+  }
+  
+  @IBAction func pressedCloseButton(_ sender: AnyObject) {
+    if let p = self.popup {
+      p.hidePopover()
     }
-    
-    @IBAction func pressedCloseButton(sender: AnyObject) {
-        if let p = self.popup {
-            p.hidePopover()
-        }
-    }
+  }
 }
