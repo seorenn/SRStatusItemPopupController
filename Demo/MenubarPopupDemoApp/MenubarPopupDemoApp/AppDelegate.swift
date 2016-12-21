@@ -11,29 +11,29 @@ import SRStatusItemPopupController
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    @IBOutlet weak var window: NSWindow!
-    var popup: SRStatusItemPopupController?
-
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
-        
-        let viewController = ViewController(nibName: "ViewController", bundle: nil)
-        let image = NSImage(named: NSImageNameFolder)
-        self.popup = SRStatusItemPopupController(viewController: viewController!, image: image, alternateImage: nil)
-        viewController!.popup = self.popup
-    }
-
-    func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
-    }
-
-    @IBAction func pressedOpenPopoverButton(sender: AnyObject) {
-        self.popup!.showPopover()
-    }
-
-    @IBAction func pressedClosePopoverButton(sender: AnyObject) {
-        self.popup!.hidePopover()
-    }
+  
+  @IBOutlet weak var window: NSWindow!
+  var popup: SRStatusItemPopupController?
+  
+  func applicationDidFinishLaunching(_ aNotification: Notification) {
+    // Insert code here to initialize your application
+    
+    let viewController = ViewController(nibName: "ViewController", bundle: nil)
+    let image = NSImage(named: NSImageNameFolder)
+    self.popup = SRStatusItemPopupController(viewController: viewController!, image: image, alternateImage: nil, autoHide: true)
+    viewController!.popup = self.popup
+  }
+  
+  func applicationWillTerminate(_ aNotification: Notification) {
+    // Insert code here to tear down your application
+  }
+  
+  @IBAction func pressedOpenPopoverButton(_ sender: AnyObject) {
+    self.popup!.showPopover()
+  }
+  
+  @IBAction func pressedClosePopoverButton(_ sender: AnyObject) {
+    self.popup!.hidePopover()
+  }
 }
 
