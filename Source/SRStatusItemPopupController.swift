@@ -33,7 +33,7 @@ public class SRStatusItemPopupController: NSObject {
 
     self.viewController = viewController
     
-    statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     
     statusItemButton = self.statusItem.value(forKey: "_button") as! NSButton
     statusItemButton.focusRingType = .none
@@ -78,7 +78,7 @@ public class SRStatusItemPopupController: NSObject {
       handler()
     }
     
-    statusItemButton.state = NSOnState
+    statusItemButton.state = NSControl.StateValue.on
     NSApp.activate(ignoringOtherApps: true)
     
     popover.animates = animated
@@ -93,7 +93,7 @@ public class SRStatusItemPopupController: NSObject {
   public func hidePopover() {
     if self.popover.isShown == false { return }
     
-    self.statusItemButton.state = NSOffState
+    self.statusItemButton.state = NSControl.StateValue.off
     self.popover.close()
   }
 }
