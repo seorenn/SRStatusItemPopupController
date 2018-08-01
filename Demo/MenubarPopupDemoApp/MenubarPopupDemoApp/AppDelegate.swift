@@ -19,9 +19,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // Insert code here to initialize your application
     
     let viewController = ViewController(nibName: "ViewController", bundle: nil)
-    let image = NSImage(named: NSImageNameFolder)
-    self.popup = SRStatusItemPopupController(viewController: viewController!, image: image, alternateImage: nil, autoHide: true)
-    viewController!.popup = self.popup
+    let image = NSImage(named: NSImage.folderName)
+    self.popup = SRStatusItemPopupController(viewController: viewController, image: image, alternateImage: nil, autoHide: true)
+    viewController.popup = self.popup
   }
   
   func applicationWillTerminate(_ aNotification: Notification) {
